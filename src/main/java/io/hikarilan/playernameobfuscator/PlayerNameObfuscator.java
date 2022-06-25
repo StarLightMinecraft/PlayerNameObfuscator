@@ -29,7 +29,7 @@ public class PlayerNameObfuscator {
     @Subscribe
     public void onRequestGameProfile(GameProfileRequestEvent e) {
         String name = e.getUsername();
-        String encode = Arrays.toString(name.getBytes(StandardCharsets.UTF_8));
+        String encode = Math.abs(Arrays.hashCode(name.getBytes(StandardCharsets.UTF_8))) + "";
         e.setGameProfile(e.getGameProfile().withName(encode.substring(0, Math.min(encode.length() - 1, 15))));
         logger.info("Player name obfuscated: " + e.getGameProfile().getName() + "(" + name + ")");
     }
