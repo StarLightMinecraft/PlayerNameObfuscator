@@ -6,7 +6,7 @@ PlayerNameObfuscator can be used to obfuscate player names (it will be obfuscate
 
 ## Environment
 
-- Paper 1.18.2
+- Velocity
 
 ## Build
 
