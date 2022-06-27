@@ -1,4 +1,4 @@
-# MiniMessageSupport
+# PlayerNameObfuscator
 
 A StarLight Minecraft Server project by HikariLan
 
